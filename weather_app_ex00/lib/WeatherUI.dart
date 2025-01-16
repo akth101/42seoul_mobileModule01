@@ -31,26 +31,34 @@ class _WeatherUIState extends State<WeatherUI> with TickerProviderStateMixin {
     return MaterialApp(
       home: Scaffold(
         appBar: topBarUI(),
-        body: TabBarView(
-          controller: _tabController,
-          children: <Widget>[
-            Center(child: Text("Currently", style: TextStyle(fontSize: screenSize.width * 0.05),),),
-            Center(child: Text("Today", style: TextStyle(fontSize: screenSize.width * 0.05),),),
-            Center(child: Text("Weekly", style: TextStyle(fontSize: screenSize.width * 0.05),),),
-        ]),
-        bottomNavigationBar: BottomAppBar(
-          color: Colors.white,
-          child: TabBar(
-            controller: _tabController,
-            tabs: const <Widget>[
-            Tab(icon: Icon(Icons.sunny), text: "Currently",),
-            Tab(icon: Icon(Icons.calendar_today), text: "Today"),
-            Tab(icon: Icon(Icons.calendar_month), text: "Weekly",),
-            ],
-          ),
-        ),
+        body: middleUI(screenSize),
+        bottomNavigationBar: bottomBarUI(),
       ),
     );
+  }
+
+  BottomAppBar bottomBarUI() {
+    return BottomAppBar(
+        color: Colors.white,
+        child: TabBar(
+          controller: _tabController,
+          tabs: const <Widget>[
+          Tab(icon: Icon(Icons.sunny), text: "Currently",),
+          Tab(icon: Icon(Icons.calendar_today), text: "Today"),
+          Tab(icon: Icon(Icons.calendar_month), text: "Weekly",),
+          ],
+        ),
+      );
+  }
+
+  TabBarView middleUI(Size screenSize) {
+    return TabBarView(
+        controller: _tabController,
+        children: <Widget>[
+          Center(child: Text("Currently", style: TextStyle(fontSize: screenSize.width * 0.05),),),
+          Center(child: Text("Today", style: TextStyle(fontSize: screenSize.width * 0.05),),),
+          Center(child: Text("Weekly", style: TextStyle(fontSize: screenSize.width * 0.05),),),
+      ]);
   }
 
   AppBar topBarUI() {
