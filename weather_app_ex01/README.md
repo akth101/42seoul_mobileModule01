@@ -1,16 +1,16 @@
-# weather_app_ex01
+# weather_app
 
-A new Flutter project.
+### 커밋 타입 (Type)
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Type | Description |
+|------|-------------|
+| feat | 새로운 기능 추가 |
+| fix | 버그 수정 |
+| docs | 문서 수정 |
+| style | 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우 |
+| refactor | 코드 리팩토링 |
+| test | 테스트 코드, 리팩토링 테스트 코드 추가 |
+| chore | 빌드 업무 수정, 패키지 매니저 수정, production code와 무관한 부분들 (.gitignore, build.gradle 같은) |
+| comment | 주석 추가 및 변경 |
+| remove | 파일, 폴더 삭제 |
+| rename | 파일, 폴더명 수정 |
