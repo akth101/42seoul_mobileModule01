@@ -18,7 +18,11 @@ class LocationData extends ChangeNotifier {
   }
 
   void fixGeoLocation() {
-    if (_flag == 0) {
+    if (_location != "Geolocation") {
+      _location = "Geolocation";
+      _flag = 1;
+    }
+    else if (_flag == 0) {
       _location = "Geolocation";
       _flag = 1;
     } else {
