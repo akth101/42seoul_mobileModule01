@@ -114,14 +114,23 @@ class _WeatherUIState extends State<WeatherUI> with TickerProviderStateMixin {
           border: InputBorder.none,
         ),
       ),
-      actions: const [
-        VerticalDivider(
+      actions:  [
+        const VerticalDivider(
           indent: 10,
           endIndent: 10,
         ),
         Padding(
-            padding: EdgeInsets.only(right: 16, left: 6),
-            child: Icon(Icons.gps_fixed_outlined)),
+            padding: const EdgeInsets.only(right: 16, left: 6),
+            child: GestureDetector(
+              onTap: () {
+                final locateProvider = context.read<LocationData>();
+                locateProvider.fixGeoLocation();
+              },
+              child: const Icon(
+                Icons.gps_fixed_outlined,
+                ),
+            ),
+            ),
       ],
     );
   }
