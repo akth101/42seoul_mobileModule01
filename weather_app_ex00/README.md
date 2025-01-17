@@ -1,16 +1,5 @@
 # weather_app
-
-### 커밋 타입 (Type)
-
-| Type | Description |
-|------|-------------|
-| feat | 새로운 기능 추가 |
-| fix | 버그 수정 |
-| docs | 문서 수정 |
-| style | 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우 |
-| refactor | 코드 리팩토링 |
-| test | 테스트 코드, 리팩토링 테스트 코드 추가 |
-| chore | 빌드 업무 수정, 패키지 매니저 수정, production code와 무관한 부분들 (.gitignore, build.gradle 같은) |
-| comment | 주석 추가 및 변경 |
-| remove | 파일, 폴더 삭제 |
-| rename | 파일, 폴더명 수정 |
+크게 2가지를 수행하는 과제입니다:  
+AppBar에 textField와 GPS icon을 그려넣습니다.  
+Bottombar 탭 3개를 만들고 각 탭에 해당하는 간단한 문자열을 화면에 그려줍니다.  
+<img width="498" alt="Image" src="https://github.com/user-attachments/assets/98a04f20-e518-410c-b7ba-fb00951e4606" />
