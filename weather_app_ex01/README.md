@@ -1,16 +1,8 @@
 # weather_app
 
-### 커밋 타입 (Type)
+이전 과제에서 그렸던 UI에 간단한 기능을 추가합니다:  
+textField에 입력된 문자열을 중앙 화면에 그려줍니다.  
+<img width="498" alt="Image" src="https://github.com/user-attachments/assets/6a799718-bdcc-4016-ae6d-ab8ecdb0a2f1" />
 
-| Type | Description |
-|------|-------------|
-| feat | 새로운 기능 추가 |
-| fix | 버그 수정 |
-| docs | 문서 수정 |
-| style | 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우 |
-| refactor | 코드 리팩토링 |
-| test | 테스트 코드, 리팩토링 테스트 코드 추가 |
-| chore | 빌드 업무 수정, 패키지 매니저 수정, production code와 무관한 부분들 (.gitignore, build.gradle 같은) |
-| comment | 주석 추가 및 변경 |
-| remove | 파일, 폴더 삭제 |
-| rename | 파일, 폴더명 수정 |
+GPS 버튼을 눌렀을 때 Geolocation이라는 문자열을 화면에 그려줍니다.  
+<img width="495" alt="Image" src="https://github.com/user-attachments/assets/096c4eb2-5b64-417f-9e45-989cec4745df" />
